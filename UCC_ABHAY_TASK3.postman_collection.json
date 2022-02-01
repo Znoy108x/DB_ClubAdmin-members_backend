@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "3bccce30-b86f-4072-889b-b3dc8bc5b6ac",
+		"name": "UCC_ABHAY_TASK3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Member-CRUD",
+			"item": [
+				{
+					"name": "createMembers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJuYW1lIjoiQWJoYXlCaXNodCIsImVtYWlsIjoiYWJoYXliMjAwMkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQvM3lWNGtSejI3M2RwM29abllZbkJPT0h0b1FmdXlwRVVMVzBWS3pxS2hHM0dpcGRiZS9YVyIsIl9pZCI6IjYxZjY2NGQ2YmY5YmNiNzc0ZThlNmJhNCIsImRhdGUiOiIyMDIyLTAxLTMwVDEwOjEzOjQyLjM5MloiLCJfX3YiOjB9LCJpYXQiOjE2NDM1Mzc2MjJ9.CmElpNTE9H9vaZ4M2DJjNGoy7MNWwRQH7s2n0bPXxfk",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"divyanshibisht\",\r\n    \"email\":\"divyanshi@gmail.com\",\r\n    \"age\":20,\r\n    \"branch\":\"CEDS\",\r\n    \"year\":2,\r\n    \"rollnumber\":20001016002,\r\n    \"address\":\"HNO-557/18,fbd\",\r\n    \"profilepic\":\"https://searchengineland.com/figz/wp-content/seloads/2015/05/sundar-pichai-2-1920-800x450.jpg\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:5000/api/member/addmember",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"member",
+								"addmember"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetchMembers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJuYW1lIjoiQWJoYXlCaXNodCIsImVtYWlsIjoiYWJoYXliMjAwMkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQvM3lWNGtSejI3M2RwM29abllZbkJPT0h0b1FmdXlwRVVMVzBWS3pxS2hHM0dpcGRiZS9YVyIsIl9pZCI6IjYxZjY2NGQ2YmY5YmNiNzc0ZThlNmJhNCIsImRhdGUiOiIyMDIyLTAxLTMwVDEwOjEzOjQyLjM5MloiLCJfX3YiOjB9LCJpYXQiOjE2NDM1Mzc2MjJ9.CmElpNTE9H9vaZ4M2DJjNGoy7MNWwRQH7s2n0bPXxfk",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/member/fetchallmembers",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"member",
+								"fetchallmembers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteMember",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJuYW1lIjoiQWJoYXlCaXNodCIsImVtYWlsIjoiYWJoYXliMjAwMkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQvM3lWNGtSejI3M2RwM29abllZbkJPT0h0b1FmdXlwRVVMVzBWS3pxS2hHM0dpcGRiZS9YVyIsIl9pZCI6IjYxZjY2NGQ2YmY5YmNiNzc0ZThlNmJhNCIsImRhdGUiOiIyMDIyLTAxLTMwVDEwOjEzOjQyLjM5MloiLCJfX3YiOjB9LCJpYXQiOjE2NDM1Mzc2MjJ9.CmElpNTE9H9vaZ4M2DJjNGoy7MNWwRQH7s2n0bPXxfk",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/member/delmember/61f677b5bd681e2c9d224587",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"member",
+								"delmember",
+								"61f677b5bd681e2c9d224587"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateMember",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJuYW1lIjoiQWJoYXlCaXNodCIsImVtYWlsIjoiYWJoYXliMjAwMkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQvM3lWNGtSejI3M2RwM29abllZbkJPT0h0b1FmdXlwRVVMVzBWS3pxS2hHM0dpcGRiZS9YVyIsIl9pZCI6IjYxZjY2NGQ2YmY5YmNiNzc0ZThlNmJhNCIsImRhdGUiOiIyMDIyLTAxLTMwVDEwOjEzOjQyLjM5MloiLCJfX3YiOjB9LCJpYXQiOjE2NDM1Mzc2MjJ9.CmElpNTE9H9vaZ4M2DJjNGoy7MNWwRQH7s2n0bPXxfk",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"61f67b93801ec6cdadd5e42e\",\r\n    \"admin\": \"61f664d6bf9bcb774e8e6ba4\",\r\n    \"name\": \"divyanshibisht\",\r\n    \"email\": \"divyanshi@gmail.com\",\r\n    \"age\": 20,\r\n    \"branch\": \"CEDS\",\r\n    \"year\": 2,\r\n    \"rollnumber\": 20001016003,\r\n    \"address\": \"HNO-557/18,fbd\",\r\n    \"profilepic\": \"https://searchengineland.com/figz/wp-content/seloads/2015/05/sundar-pichai-2-1920-800x450.jpg\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/member/updMem/61f67b93801ec6cdadd5e42e",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"member",
+								"updMem",
+								"61f67b93801ec6cdadd5e42e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "createAdmin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"DivyanshiBisht\",\r\n    \"email\":\"Divyanshi@gmail.com\",\r\n    \"password\":\"DivyanshiBisht\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/auth/createadmin",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"createadmin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginAdmin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJfaWQiOiI2MWY2NjRkNmJmOWJjYjc3NGU4ZTZiYTQiLCJuYW1lIjoiQWJoYXlCaXNodCIsImVtYWlsIjoiYWJoYXliMjAwMkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQvM3lWNGtSejI3M2RwM29abllZbkJPT0h0b1FmdXlwRVVMVzBWS3pxS2hHM0dpcGRiZS9YVyIsImRhdGUiOiIyMDIyLTAxLTMwVDEwOjEzOjQyLjM5MloiLCJfX3YiOjB9LCJpYXQiOjE2NDM1MzkyNDR9.W2-_z-HinG32l9i6-0Sq4EKHEdZpobfxxBzQWIs6J30",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"abhayb2002@gmail.com\",\r\n    \"password\":\"abhayBisht\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:5000/api/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAdmin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJfaWQiOiI2MWY2NjRkNmJmOWJjYjc3NGU4ZTZiYTQiLCJuYW1lIjoiQWJoYXlCaXNodCIsImVtYWlsIjoiYWJoYXliMjAwMkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQvM3lWNGtSejI3M2RwM29abllZbkJPT0h0b1FmdXlwRVVMVzBWS3pxS2hHM0dpcGRiZS9YVyIsImRhdGUiOiIyMDIyLTAxLTMwVDEwOjEzOjQyLjM5MloiLCJfX3YiOjB9LCJpYXQiOjE2NDM1MzkyNDR9.W2-_z-HinG32l9i6-0Sq4EKHEdZpobfxxBzQWIs6J30",
+								"type": "default"
+							},
+							{
+								"key": "Content-Transfer-Encoding",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/auth/getadmin",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"getadmin"
+							],
+							"query": [
+								{
+									"key": "auth-token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJfaWQiOiI2MWY2NjRkNmJmOWJjYjc3NGU4ZTZiYTQiLCJuYW1lIjoiQWJoYXlCaXNodCIsImVtYWlsIjoiYWJoYXliMjAwMkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQvM3lWNGtSejI3M2RwM29abllZbkJPT0h0b1FmdXlwRVVMVzBWS3pxS2hHM0dpcGRiZS9YVyIsImRhdGUiOiIyMDIyLTAxLTMwVDEwOjEzOjQyLjM5MloiLCJfX3YiOjB9LCJpYXQiOjE2NDM1MzkyNDR9.W2-_z-HinG32l9i6-0Sq4EKHEdZpobfxxBzQWIs6J30",
+									"disabled": true
+								},
+								{
+									"key": null,
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
