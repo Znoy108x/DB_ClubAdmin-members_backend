@@ -20,12 +20,7 @@ admins can only see their created Members
 - download ThunderClien Package in VsCode
 - Make Api Request on The Following Links
 
-
-
-
-
-
-
+## Import That postman collection to get a better idea on the api calls 📞 
 <pre>
        /ˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆ\
       |           See You Soon .. 🤝            |
