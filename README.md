@@ -1,4 +1,4 @@
-# Hello, I am made this project  DB_ClubAdmin-members_backend <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="50px"><br>
+# Hello, I made this project  DB_ClubAdmin-members_backend <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="50px"><br>
 ## Usage 🧑‍💼
 with the help of a frontend we can create a admin who can create members for its club
 admins can only see their created Members
